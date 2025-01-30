@@ -9,7 +9,7 @@ const ImageModal = ({ isOpen, onClose, image }) => {
       onRequestClose={onClose}
       contentLabel="Modal opened"
       style={{
-        overlay: { backgroundColor: "rgba(0, 0, 0, 0.7)" }, // Напівпрозорий фон
+        overlay: { backgroundColor: "rgba(0, 0, 0, 0.7)" },
         content: {
           top: "50%",
           left: "50%",
@@ -20,7 +20,6 @@ const ImageModal = ({ isOpen, onClose, image }) => {
           padding: 0,
           border: "none",
           background: "none",
-          transition: "opacity 0.3s ease, transform 0.3s ease",
         },
       }}
     >

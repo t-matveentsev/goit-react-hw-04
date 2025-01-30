@@ -10,8 +10,6 @@ const Loader = () => {
         width="80"
         color="#e9caae"
         ariaLabel="triangle-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
       />
     </div>
   );

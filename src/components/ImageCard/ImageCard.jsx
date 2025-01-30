@@ -8,7 +8,6 @@ const ImageCard = ({ item, openModal }) => {
         src={item.urls.small}
         alt={item.alt_description}
         onClick={() => openModal(item.urls.regular)}
-        style={{ cursor: "pointer" }}
       />
     </div>
   );
