@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import SearchBar from "./components/SearchBar/SearchBar";
 import { fetchRequest } from "./services/api";
+import SearchBar from "./components/SearchBar/SearchBar";
 import ImageGallery from "./components/ImageGallery/ImageGallery";
 import Loader from "./components/Loader/Loader";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
@@ -34,6 +34,8 @@ export default function App() {
 
   const handleSetQuery = (newQuery) => {
     setQuery(newQuery);
+    setArticles([]);
+    setPage(1);
   };
 
   const openModal = (imageUrl) => {

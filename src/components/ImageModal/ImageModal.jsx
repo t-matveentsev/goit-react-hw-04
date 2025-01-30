@@ -20,24 +20,16 @@ const ImageModal = ({ isOpen, onClose, image }) => {
           padding: 0,
           border: "none",
           background: "none",
+          transition: "opacity 0.3s ease, transform 0.3s ease",
         },
       }}
     >
       <div>
-        <button
+        <img
           onClick={onClose}
-          style={{
-            position: "absolute",
-            top: 10,
-            right: 10,
-            background: "white",
-            border: "none",
-            cursor: "pointer",
-          }}
-        >
-          X
-        </button>
-        <img src={image} style={{ maxWidth: "90vw", maxHeight: "90vh" }} />
+          src={image}
+          style={{ maxWidth: "90vw", maxHeight: "90vh" }}
+        />
       </div>
     </Modal>
   );

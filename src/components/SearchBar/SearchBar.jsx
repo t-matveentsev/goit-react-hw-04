@@ -9,7 +9,13 @@ const SearchBar = ({ onSubmit }) => {
     e.preventDefault();
     value.length > 0
       ? onSubmit(value)
-      : toast.error("Entered nothing. Received nothing.");
+      : toast.error("Entered nothing. Received nothing.", {
+          style: {
+            borderRadius: "10px",
+            background: "#333",
+            color: "#fff",
+          },
+        });
   };
 
   return (
@@ -19,6 +25,7 @@ const SearchBar = ({ onSubmit }) => {
           onChange={(e) => setValue(e.target.value)}
           value={value}
           type="text"
+          name="search"
           autoComplete="off"
           placeholder="Search images"
         />

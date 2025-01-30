@@ -9,8 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Arial", sans-serif;
-  background-color: black;
-  /* color: #ffffff; */
+  background: linear-gradient(to bottom, #aeb6bf, #000000);
 }
 main {
   flex-grow: 1;

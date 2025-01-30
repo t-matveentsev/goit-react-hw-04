@@ -1,6 +1,6 @@
 .wrapper {
   display: flex;
-  background-color: #aeb6bf;
+  background-color: inherit;
   height: 80px;
   align-items: center;
   justify-content: center;
@@ -28,5 +28,5 @@ input::placeholder {
   border-radius: 8px;
   border: 1px solid black;
   margin-left: 10px;
-  background-color: #34495e;
+  background-color: #000000;
 }
