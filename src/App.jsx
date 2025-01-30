@@ -10,7 +10,7 @@ import ImageModal from "./components/ImageModal/ImageModal";
 export default function App() {
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const [page, setPage] = useState(1);
   const [modalIsOpen, setModalIsOpen] = useState(false);
