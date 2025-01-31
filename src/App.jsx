@@ -50,7 +50,7 @@ export default function App() {
 
   return (
     <div>
-      <SearchBar onSubmit={handleSetQuery} />
+      <SearchBar handleSetQuery={handleSetQuery} />
       {articles.length > 0 && (
         <ImageGallery articles={articles} openModal={openModal} />
       )}

@@ -2,13 +2,13 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import s from "./SearchBar.module.css";
 
-const SearchBar = ({ onSubmit }) => {
+const SearchBar = ({ handleSetQuery }) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     value.length > 0
-      ? onSubmit(value)
+      ? handleSetQuery(value)
       : toast.error("Entered nothing. Received nothing.", {
           style: {
             borderRadius: "10px",
